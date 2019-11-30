@@ -223,7 +223,7 @@ Projector.prototype.discover = function() {
                 f.status == SC.OK) {
                 // 正常な応答の場合送信元アドレスをresolveで後続に伝達
                 if (backup_address != rinfo.address) {
-                    console.log(`Found ${this.model} on ${rinfo.address}`);
+                    debug(`Found ${this.model} on ${rinfo.address}`);
                     backup_address = rinfo.address;
                 }
                 this.clean();
